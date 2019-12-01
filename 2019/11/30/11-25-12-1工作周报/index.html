@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="本周学习内容 《机器学习指南》分类以及训练模型的学习 leetcode 算法刷题 判断一个二叉树是否对称 判断两个二叉树是否相等 判断一个二叉树是否平衡 删除链表中的重复元素 判断一个链表是否有环 原地移除数组中的某个元素    学习与反思">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-01T08:36:43.276Z">
+<meta property="og:updated_time" content="2019-12-01T08:39:51.538Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -205,13 +205,13 @@
 </blockquote>
 <blockquote>
 <p>在拟合具有线性模型($y=\theta_0+\theta_1x$)的样本集时，可以使用已知方程来求解，也可以使用回归来求解，即不断地尝试 $\theta_0$ 与 $\theta_1$的值，直到找到使损失函数(回归常用的是 $RMSE$或者$MSE$）最小的解，变化 $\theta$ 的过程也称梯度下降(Gradient descent)。下降的多少由$\delta=\eta\Delta_{\theta}MSE(\theta)$ 决定，其中$\eta$ 称为学习率，$\Delta_{\theta}MSE(\theta)$ 称为损失函数的梯度向量，学习率由我们指定，损失函数的梯度向量如何计算呢？有批量梯度下降（B G D）、随机梯度下降（S G D）、小批量梯度下降,批量梯度下降每次使用所有的样本集，随机梯度下降每次只随机选择一个样本，小批量梯度下降作为折中，每次选择部分样本。</p>
-<p>如果要拟合非线性模型的话，可以使用多项式回归，预测值与特征之间的关系为n次方($exp;\hat{y} = \theta^2x$),在使用多项式回归时，如何判断模型是否在数据集上发生过拟合了呢？画出学习曲线，一训练集规模为自变量，训练指标$RMSE $ 为因变量的曲线。</p>
+<p>如果要拟合非线性模型的话，可以使用多项式回归，预测值与特征之间的关系为n次方($exp:\hat{y} = \theta^2x$),在使用多项式回归时，如何判断模型是否在数据集上发生过拟合了呢？画出学习曲线，一训练集规模为自变量，训练指标$RMSE $ 为因变量的曲线。</p>
 <p>线性模型中一个重要的问题就是过拟合，即模型的泛化能力差。一个好的方法是约束模型参数的权重（正则化线性模型），不同的约束权重的方法可以分为三类：Ridge 回归、Lasso回归、弹性网络。Ridge 回归在损失函数后加上 $\alpha\frac{1}{2}\sum_{i=1}^{n}\theta_i^2$ ,其中$\alpha$ 为超参数，决定正则化模型的强度，后面的表示$\theta$ 向量的$l_1$ 范数的平方；Lasso 回归在损失函数后加上 $\theta$ 向量的$l_2$ 范数;弹性网络介于Ridge 和Lasso 回归之间。</p>
 <p>回归也可用于分类，Logistic 回归和Softmax 回归，Logistic 回归预测一个样本属于某个类别的概率，其中用到了逻辑函数($\sigma(t)=\frac{1}{1+exp(-t)}$),Softmax 回归又称 多类别 Logistic 回归。</p>
 </blockquote>
 <blockquote>
 <p>链表作为一个线性结构，可以由头结点开始依次遍历下去，但是二叉树作为一个树性结构，需要用到递归的方式来遍历，如果要按层序进行遍历，则需要借助队列实现。</p>
-<p>在链表问题中，双指针的使用挺常见的，判断一个链表是否有环\找到链表的中间节点，均用到快慢指针，找到倒数第k个节点，先让一个指针走k步，然后两个指针同时走。</p>
+<p>在链表问题中，双指针的使用挺常见的，判断一个链表是否有环找到链表的中间节点，均用到快慢指针，找到倒数第 k 个节点，先让一个指针走k步，然后两个指针同时走。</p>
 <p>在写 code 时，要注意简单的时间的优化，比如 ArrayList 和 LinkedList，如果要经常增加、删除一个元素就使用 LinkedList ；在需要经常拼接字符串时，使用StringBuilder或StringBuffer（StringBuffer 有缓存，就支持并发操作喽） 代替 String。</p>
 </blockquote>
 <h2 id="下周学习计划"><a href="#下周学习计划" class="headerlink" title="下周学习计划"></a>下周学习计划</h2><ol>
