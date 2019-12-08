@@ -6,17 +6,13 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>11.25~12.1工作周报 | Hexo</title>
+  <title>Archives: 2019/12 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本周学习内容 《机器学习指南》分类以及训练模型的学习 leetcode 算法刷题 判断一个二叉树是否对称 判断两个二叉树是否相等 判断一个二叉树是否平衡 删除链表中的重复元素 判断一个链表是否有环 原地移除数组中的某个元素    学习与反思">
-<meta name="keywords" content="周报">
-<meta property="og:type" content="article">
-<meta property="og:title" content="11.25~12.1工作周报">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;30&#x2F;11-25-12-1%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5&#x2F;index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;2019&#x2F;12&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="本周学习内容 《机器学习指南》分类以及训练模型的学习 leetcode 算法刷题 判断一个二叉树是否对称 判断两个二叉树是否相等 判断一个二叉树是否平衡 删除链表中的重复元素 判断一个链表是否有环 原地移除数组中的某个元素    学习与反思">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-01T08:39:51.538Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -151,97 +147,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-11-25-12-1工作周报" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      11.25~12.1工作周报
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/12/08/12-2%EF%BD%9E12-8%E6%97%A5%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/" class="archive-article-date">
+  	<time datetime="2019-12-08T01:33:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-08</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/12/08/12-2%EF%BD%9E12-8%E6%97%A5%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/">12.2～12.8日工作周报.md</a>
     </h1>
   
 
-        
-        <a href="/2019/11/30/11-25-12-1%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/" class="archive-article-date">
-  	<time datetime="2019-11-30T11:16:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="本周学习内容"><a href="#本周学习内容" class="headerlink" title="本周学习内容"></a>本周学习内容</h2><ol>
-<li>《机器学习指南》分类以及训练模型的学习</li>
-<li>leetcode 算法刷题<ol>
-<li>判断一个二叉树是否对称</li>
-<li>判断两个二叉树是否相等</li>
-<li>判断一个二叉树是否平衡</li>
-<li>删除链表中的重复元素</li>
-<li>判断一个链表是否有环</li>
-<li>原地移除数组中的某个元素</li>
-</ol>
-</li>
-</ol>
-<h2 id="学习与反思"><a href="#学习与反思" class="headerlink" title="学习与反思"></a>学习与反思</h2><a id="more"></a>
-<blockquote>
-<p>分类是比较常用的机器学习任务，分类，又可以分为二分类、多类分类、多标签分类、多输出分类。</p>
-<ol>
-<li>最简单的二分类（Binary Classifier），就是只有两个类别，例如判断一张图片是猫或不是猫。</li>
-<li>多类分类(Multi-Class Classifier)，给定一张样本图片猫给模型，模型可以判断出样本是狸猫、花猫或者波斯猫，多类分类可以由二分类来实现，例如有 n 个类别需要进行判别，就训练 n 个二分类模型，最后选择指标最高的一个作为结果；或者每两个组成一个二分类模型，最后选择输出结果较多的类别，但是这种需要训练 $\frac{n\cdot(n-1)}{2}$ 个模型，计算量也较大，</li>
-<li>多标签分类(Multi-label Classifier)，对一个样本进行判断时，模型对该样本的标签可以是多个，即一个样本可以有多个标签。和多类分类对比则是一个样本可以有多个标签。</li>
-<li>多输出分类（Multioutput-Muliclass classification），是多标签分类的普遍化，即一个标签可以是多个类别的。</li>
-</ol>
-<blockquote>
-<p>多标签分类和多输出分类概念有点模糊，想不到很好的例子。</p>
-</blockquote>
-<p>如何评判一个二分类模型的好坏，常见的指标有准确率、召回率、R O C 曲线。</p>
-<ol>
-<li>准确率($presion=\frac{TP}{TP+FP}$)对所预测的结果而言，指所预测的正例中真正正例的比例</li>
-<li>召回率($recall=\frac{TP}{TP+FN}$)对原样本而言，指样本中的正例被模型预测为正例的比例 </li>
-</ol>
-<p>不同的模型同于这两个指标会有不同的要求，需要考虑准确率与召回率的折中，或者使用 R O C 曲线，R O C曲线重要的指标是  A U C(area of curve),这个指标越接近于1，模型效果越好。</p>
-<p>在拟合具有线性模型($y=\theta_0+\theta_1x$)的样本集时，可以使用已知方程来求解，也可以使用回归来求解，即不断地尝试 $\theta_0$ 与 $\theta_1$的值，直到找到使损失函数(回归常用的是 $RMSE$或者$MSE$）最小的解，变化 $\theta$ 的过程也称梯度下降(Gradient descent)。下降的多少由$\delta=\eta\Delta_{\theta}MSE(\theta)$ 决定，其中$\eta$ 称为学习率，$\Delta_{\theta}MSE(\theta)$ 称为损失函数的梯度向量，学习率由我们指定，损失函数的梯度向量如何计算呢？有批量梯度下降（B G D）、随机梯度下降（S G D）、小批量梯度下降,批量梯度下降每次使用所有的样本集，随机梯度下降每次只随机选择一个样本，小批量梯度下降作为折中，每次选择部分样本。</p>
-<p>如果要拟合非线性模型的话，可以使用多项式回归，预测值与特征之间的关系为n次方($exp:\hat{y} = \theta^2x$),在使用多项式回归时，如何判断模型是否在数据集上发生过拟合了呢？画出学习曲线，一训练集规模为自变量，训练指标$RMSE $ 为因变量的曲线。</p>
-<p>线性模型中一个重要的问题就是过拟合，即模型的泛化能力差。一个好的方法是约束模型参数的权重（正则化线性模型），不同的约束权重的方法可以分为三类：Ridge 回归、Lasso回归、弹性网络。Ridge 回归在损失函数后加上 $\alpha\frac{1}{2}\sum_{i=1}^{n}\theta_i^2$ ,其中$\alpha$ 为超参数，决定正则化模型的强度，后面的表示$\theta$ 向量的$l_1$ 范数的平方；Lasso 回归在损失函数后加上 $\theta$ 向量的$l_2$ 范数;弹性网络介于Ridge 和Lasso 回归之间。</p>
-<p>回归也可用于分类，Logistic 回归和Softmax 回归，Logistic 回归预测一个样本属于某个类别的概率，其中用到了逻辑函数($\sigma(t)=\frac{1}{1+exp(-t)}$),Softmax 回归又称 多类别 Logistic 回归。</p>
-<p>链表作为一个线性结构，可以由头结点开始依次遍历下去，但是二叉树作为一个树性结构，需要用到递归的方式来遍历，如果要按层序进行遍历，则需要借助队列实现。</p>
-<p>在链表问题中，双指针的使用挺常见的，判断一个链表是否有环找到链表的中间节点，均用到快慢指针，找到倒数第 k 个节点，先让一个指针走k步，然后两个指针同时走。</p>
-<p>在写 code 时，要注意简单的时间的优化，比如 ArrayList 和 LinkedList，如果要经常增加、删除一个元素就使用 LinkedList ；在需要经常拼接字符串时，使用StringBuilder或StringBuffer（StringBuffer 有缓存，就支持并发操作喽） 代替 String。</p>
-</blockquote>
-<h2 id="下周学习计划"><a href="#下周学习计划" class="headerlink" title="下周学习计划"></a>下周学习计划</h2><ol>
-<li>《机器学习指南》支持向量机和决策树的学习</li>
-<li>做leetcode 链表相关题目</li>
-</ol>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -253,96 +188,57 @@
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/30/11-25-12-1%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
   
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/12/01/11-25-12-1%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/" class="archive-article-date">
+  	<time datetime="2019-12-01T11:16:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-01</time>
+</a>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
+    	 
   
-  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/12/01/11-25-12-1%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/">11.25~12.1工作周报</a>
+    </h1>
   
 
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color3">周报</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+          
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  
+  
+    </div></section>
   
 
-  
-
-  
+    
 
 
           </div>
@@ -365,8 +261,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
