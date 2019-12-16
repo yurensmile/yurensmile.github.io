@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | the coder&#39;s blog</title>
+  <title>12.9~12.15工作周报 | the coder&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="the coder&#39;s blog">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;2019&#x2F;index.html">
+  <meta name="description" content="本周学习内容 《机器学习指南》决策树、集成学习与随机森林的学习  LeetCode 链表题目完成  学习与反思">
+<meta name="keywords" content="周报">
+<meta property="og:type" content="article">
+<meta property="og:title" content="12.9~12.15工作周报">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;15&#x2F;12-9-12-15%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5&#x2F;index.html">
 <meta property="og:site_name" content="the coder&#39;s blog">
+<meta property="og:description" content="本周学习内容 《机器学习指南》决策树、集成学习与随机森林的学习  LeetCode 链表题目完成  学习与反思">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-12-16T03:26:43.065Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="the coder&#39;s blog" type="application/atom+xml">
@@ -147,36 +151,109 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-12-9-12-15工作周报" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      12.9~12.15工作周报
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/15/12-9-12-15%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/" class="archive-article-date">
+
+        
+        <a href="/2019/12/15/12-9-12-15%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/" class="archive-article-date">
   	<time datetime="2019-12-15T03:23:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-15</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/15/12-9-12-15%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/">12.9~12.15工作周报</a>
-    </h1>
-  
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">1.4k字</span>
+      </span>
+    </span>
 
-        <div class="article-info info-on-right">
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">4分</span>
+      </span>
+    </span>
+</div>
+
           
+        
+       
+       <span class="archive-article-date">
+        阅读量 <span id="busuanzi_value_page_pv"></span>
+       </span>
+       
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="本周学习内容"><a href="#本周学习内容" class="headerlink" title="本周学习内容"></a>本周学习内容</h2><ol>
+<li>《机器学习指南》决策树、集成学习与随机森林的学习 </li>
+<li>LeetCode 链表题目完成</li>
+</ol>
+<h2 id="学习与反思"><a href="#学习与反思" class="headerlink" title="学习与反思"></a>学习与反思</h2><a id="more"></a>
+<blockquote>
+<p>决策树算法是利用树形状结构来进行计算的。树的每一个非叶节点代表了对一个特征的判断，每一个叶节点代表一个类别。当对一个样例进行分类时，从根节点开始，一步一步的往下判断，直到最后得到该样例所属的类别。在训练决策树的过程中，其目的是使节点的 $Gini$ 指数最小化，所谓 $Gini$ 指数是指该节点的所有样例中不属于该节点类别的比例，如果一个节点的样例全部都是同一个类别，那么它的 $Gini$ 指数为0 。根据此种表示方法，可以估计分类的概率，比如一个叶节点的类别为 “猫”，在被分类到该类别的实例中，总共有100 个实例，其中猫 96 个，那么可以说分类的准确率为 96%</p>
+<p>决策树也可以用来回归预测一个数值，其目的是使 $MSE$ 最小，叶节点也不再是一个类别，而是一个值。在决策树的算法中 $CART$ 算法可以用来进行回归。</p>
+<p>当决策树用来进行分类或回归时，均不对数据做假设（比如线性模型假设数据是线性的），那么决策树就只是修改自己的模型使得可以尽可能的拟合数据，这样就可能出现过拟合的可能性，因此 $Sklearn$ 中提供了一些参数来限制决策树的形状，避免过拟合。</p>
+<p>集成学习，即合并多个分类器或者回归器，集成后的算法叫集成方法，通常情况下合并后的预测效果要比单个预测效果要好，这就是“三个臭皮匠顶一个诸葛亮”。如果集成方法中的单个模型使用决策树的话，那么这个集成学习方法就被称为随机森林（较强大的机器学习算法之一）。</p>
+<p>在由单个模型组成集成方法时，可以使用投票，有硬投票和软投票之分，硬投票即每个模型一票，最后选出得票较多的，软投票即如果单个模型可以预测概率，那就选择 $sklearn$ 以最高的概率来预测这个类。</p>
+<p>在由一个训练集训练出集成方法时，就需要考虑一个问题，集成方法中训练单个模型时，训练数据如何选择。一种叫做 Bagging ，即每一个模型都在整个训练集中随机抽取一部分样例进行训练，另一种叫 Pasting ,即在第一个模型选择完样例后，第二个模型在剩余的训练集中，在选择样例进行训练，以此类推。那么对于Bagging 来说，不同的模型之间就可能会发生重复采样，就有一部分数据可能没有被所有的模型遇到，这类实例就叫 $Out-of-Bag$ 实例，用这部分样例对模型进行评价（即这部分实例作为测试集）。</p>
+<p>随机森林是一种集成方法，$sklearn$ 中使用$RandomForestClassifier、RandomFroestRegreddor$ 来使用随机森林进行分类或回归。如果我们再对特征使用随机阈值那么决策树就会更加随机，这种就称为极端决策树，$sklearn$ 中使用 $ExtraTreeClassifier$ ,从训练好的随机森林模型中，我们可以获得特征重要度（特征对决定类别的重要程度）。</p>
+<blockquote>
+<p>提升，通过某种方法对集成方法整体的预测效果进行提升，常用的方法有 Adaptive Boosting\ Gradient Boosting。其中Adaptive Boosting 指按顺序来训练模型，在第一个模型训练错误的样例上，分配更高的权重，第二个模型依据新的权重来进行训练，以此类推。Gradient Boosting 是指在前一个模型的误差上去训练新的模型，在 $slearn$ 中使用 $GradientBoostingRegressor$ 。</p>
+<p>Stacking，避免使用投票的集成学习，它训练一个新的模型来预测 预测值。比如将训练集分为 $subset1$ 、$subset2$ ,使用 $subset1$  来预测 n 个模型，然后使用这 n 个模型来预测 subset 2中的每一个样例，最后对于每一个样例生成 n 个预测值，使用这 n 个预测值与 $subset2$  的每一个结果组成一个新的训练集，训练一个模型( blender )。在对一个输入进行预测时，按照按照如上 $subset2$  的流程继续进行。</p>
+</blockquote>
+<ol>
+<li>链表相比于数组的一个问题，就是无法快速的获取长度，因此可以使用 slow 、 fast 双指针的技巧，比如在监测链表是否有环，以及得到环的位置的时候</li>
+<li>在插入或者删除链表节点的时候，为了避免头结点的不一致性，可以在头结点前加一个无用的节点（dummy 节点）</li>
+<li>如果处理的倒数多少个指针，先让一个指针往前移动 k 步，然后两个指针在同时移动</li>
+<li>有时需要临时保存一个节点，以防在前一个链表指针变化后，无法获取到该节点</li>
+</ol>
+</blockquote>
+<h2 id="下周学习计划"><a href="#下周学习计划" class="headerlink" title="下周学习计划"></a>下周学习计划</h2><ol>
+<li>《机器学习指南》降维、TensorFlow 入门</li>
+<li>LeetCode 上树题目</li>
+</ol>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -188,95 +265,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/15/12-9-12-15%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/08/12-2%EF%BD%9E12-8%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/" class="archive-article-date">
-  	<time datetime="2019-12-08T01:33:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-08</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/12/08/12-2%EF%BD%9E12-8%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">12.2～12.8工作周报.md</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/08/12-2%EF%BD%9E12-8%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/">12.2～12.8工作周报.md</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color3">周报</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/01/11-25-12-1%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/" class="archive-article-date">
-  	<time datetime="2019-12-01T11:16:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/01/11-25-12-1%E5%B7%A5%E4%BD%9C%E5%91%A8%E6%8A%A5/">11.25~12.1工作周报</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color3">周报</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -307,8 +395,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
